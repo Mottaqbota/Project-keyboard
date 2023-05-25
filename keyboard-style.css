@@ -1,105 +1,107 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* outline: 1px dashed #000; */
-    font-family: Poppins;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px dashed #000; */
+  font-family: Poppins;
 }
 
-section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: #C6C6C6;
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: #c6c6c6;
 }
 
-ion-icon{
-    font-size: 26px;
-    --ionicon-stroke-width: 26px;
-
+ion-icon {
+  font-size: 26px;
+  --ionicon-stroke-width: 26px;
 }
+
 
 :root {
-    --text-color: #3D3D3D;
-    --keycap-color: #848484;
-    --keycap-border-color: #79777740;
+  --text-color: #3d3d3d;
+  --keycap-color: #848484;
+  --keycap-border-color: #79777740;
 
-    --keyboard-bg-color: #7E7E7E6B;
+  --keyboard-bg-color: #7e7e7e6b;
 }
 
-.container_kb{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-    padding: 20px 10px;
-    width: auto;
-    height: auto;
-    border-radius: 20px;
-    color: var(--text-color);
-    background-color: var(--keyboard-bg-color);
+.container_kb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px 12px;
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+  color: var(--text-color);
+  background-color: var(--keyboard-bg-color);
 }
 
-.line-keys{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 10px;
+.line-keys {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 12px;
 }
 
+.keycaps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
 
-.keycaps{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    user-select: none;
-
-    padding: 6px;
-    border-radius: 6px;
-    background-color: var(--keycap-color);
-    box-shadow: 2px 2px 0px 2px var(--keycap-border-color);
+  padding: 6px;
+  border-radius: 10px;
+  background-color: var(--keycap-color);
+  box-shadow: 2px 2px 0px 2px var(--keycap-border-color);
 }
 
-.alert-capslock{
-    display: none;
-    align-items: center;
-    justify-content: space-around;
-    padding: 10px;
-    width: 26%;
-    font-weight: 600;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    color: white;
-    background-color: rgb(196, 1, 1);
+.alert-capslock {
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  width: 26%;
+  font-weight: 600;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: white;
+  background-color: rgb(196, 1, 1);
 }
-.alert-capslock::after{
-    content: "Caps lock ativo!";
-}
-
-.letter-keys{
-    width: 50px;
-    height: 50px;
-}
-.other-keys{
-    width: 100px;
-    height: 50px;
+.alert-capslock::after {
+  content: 'Caps lock ativo!';
 }
 
-.space-key{
-    width: 300px;
-    height: 50px;
+.letter-keys {
+  width: 50px;
+  height: 50px;
+}
+.other-keys {
+  width: 100px;
+  height: 50px;
 }
 
-.active-keycap{
-    color: var(--keycap-color);
-    background-color: var(--text-color);
+.space-key {
+  width: 350px;
+  height: 50px;
+}
+
+.active-keycap {
+  color: var(--keycap-color);
+  background-color: var(--text-color);
 }
 
 .uppercase {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
