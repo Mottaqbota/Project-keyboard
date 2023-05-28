@@ -25,11 +25,11 @@ ion-icon {
 
 
 :root {
-  --text-color: #3d3d3d;
-  --keycap-color: #848484;
-  --keycap-border-color: #79777740;
+  --text-color: #1d1d1d;
+  --keycap-color: #dcdcdc;
+  --keycap-border-color: #49494940;
 
-  --keyboard-bg-color: #7e7e7e6b;
+  --keyboard-bg-color: #5a5a5a6b;
 }
 
 .container_kb {
@@ -37,7 +37,7 @@ ion-icon {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
   padding: 20px 12px;
   width: auto;
   height: auto;
@@ -51,7 +51,7 @@ ion-icon {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 12px;
+  gap: 10px;
 }
 
 .keycaps {
@@ -63,8 +63,9 @@ ion-icon {
 
   padding: 6px;
   border-radius: 10px;
+  border: solid 1px var(--text-color);
   background-color: var(--keycap-color);
-  box-shadow: 2px 2px 0px 2px var(--keycap-border-color);
+  box-shadow: 2px 0px 0px 2px var(--keycap-border-color);
 }
 
 .alert-capslock {
